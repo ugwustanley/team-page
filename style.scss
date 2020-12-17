@@ -1,0 +1,165 @@
+     $background    : rgba(250, 250, 250, 1);
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: $background ;
+}
+.intro{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding:1rem;
+    margin-top: 2rem;
+    @media screen and (max-width:930px) {
+        grid-template-columns: 1fr;
+    }
+    @media screen and (max-width:400px) {
+        justify-items: start;
+    }
+    &__section1{
+        max-width: 400px;
+        margin-right:0px;
+        .intro__heading{
+            font-family: PT Serif;
+            font-size: 2.1rem;
+            @media screen and (max-width:400px) {
+                font-size:1.6rem;
+            }
+        }
+    }
+    &__section2{
+         max-width: 400px;
+         margin-left: 40px;
+         margin-top: 10px;
+         @media screen and (max-width:930px) {
+            margin-left: 0px;
+            margin-top:20px;
+            text-align: center;
+         }
+         @media screen and (max-width:400px) {
+            text-align:left;
+        }
+        .intro__descheading{
+            font-family: poppins;
+            font-size: 1.1rem;
+            @media screen and (max-width:400px) {
+                font-size: .8rem;
+            }
+        }
+        .intro__desc{
+            font-family: poppins;
+            font-weight: 400;
+            font-size: .8rem;
+            @media screen and (max-width:400px) {
+                font-size: .7rem;
+            }
+        }
+    }
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-items: center;
+    grid-gap:7rem 2rem;
+    margin: 150px 0;
+    @media screen and (max-width:930px) {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap:2rem 4rem;
+        margin: 100px 0;
+    }
+    @media screen and (max-width:510px) {
+        grid-template-columns: 1fr;
+        grid-gap:0rem;
+    }
+    @media screen and (max-width:400px) {
+       margin: 50px 0;
+    }
+    .card{
+        position: relative;
+        width:220px;
+        height:350px;
+        @media screen and (max-width:930px) {
+           width:180px;
+        }
+        @media screen and (max-width:400px) {
+            margin-right: 15px;
+        }
+        &:nth-child(odd){
+            @media screen and (max-width:930px) {
+                justify-self: end;
+            }
+            @media screen and (max-width:510px) {
+                justify-self: center;
+            }
+        }
+        &:nth-child(even){
+            @media screen and (max-width:930px) {
+                justify-self: start;
+                transform: translateY(60px);
+            }
+            @media screen and (max-width:510px) {
+                justify-self: center;
+                transform: translateY(0px);
+            }
+        }
+        &__img{
+          width:calc(100% - 0px);
+        }
+        &__label{
+            position: absolute;
+            font-family: PT Serif;
+            top:45px;
+            right: -64px;
+            font-size: .9rem;
+            display:inline-block;
+            transform: rotate(90deg);
+            @media screen and (max-width:400px) {
+                font-size: .7rem;
+                top:33px;
+                right: -50px;
+            }
+        }
+        &__name{
+            font-family: poppins;
+            font-weight: 400;
+            padding-top:.6rem;
+            @media screen and (max-width:400px) {
+                font-size: .9rem;
+            }
+        }
+    }
+    .card--left{
+        justify-self: end;
+        @media screen and (max-width:930px) {
+           justify-self:center;
+        }
+    }
+    .card--right{
+        justify-self: start;
+        @media screen and (max-width:930px) {
+            justify-self:center;
+         }
+    }
+    .card--center{
+        transform: translateY(80px);
+        @media screen and (max-width:930px) {
+            transform: translateY(0px);
+         }
+    }
+}
+
+.footer{
+    text-align: center;
+    font-family: poppins;
+    font-size: .8rem;
+    padding:2rem 0;
+}
+
