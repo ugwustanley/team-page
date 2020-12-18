@@ -30,6 +30,7 @@ body {
 @media screen and (max-width: 400px) {
   .intro {
     justify-items: start;
+    margin-top: 1.7rem;
   }
 }
 
@@ -43,14 +44,8 @@ body {
   font-size: 2.1rem;
 }
 
-@media screen and (max-width: 400px) {
-  .intro__section1 .intro__heading {
-    font-size: 1.6rem;
-  }
-}
-
 .intro__section2 {
-  max-width: 400px;
+  max-width: 380px;
   margin-left: 40px;
   margin-top: 10px;
 }
@@ -66,6 +61,7 @@ body {
 @media screen and (max-width: 400px) {
   .intro__section2 {
     text-align: left;
+    padding-left: 4px;
   }
 }
 
@@ -74,21 +70,16 @@ body {
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 400px) {
-  .intro__section2 .intro__descheading {
-    font-size: .8rem;
-  }
-}
-
 .intro__section2 .intro__desc {
   font-family: poppins;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 1rem;
+  padding-top: .5rem;
 }
 
 @media screen and (max-width: 400px) {
   .intro__section2 .intro__desc {
-    font-size: .7rem;
+    font-size: .8rem;
   }
 }
 
@@ -114,7 +105,7 @@ body {
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 530px) {
   .cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -136,7 +127,7 @@ body {
 
 @media screen and (max-width: 930px) {
   .cards .card {
-    width: 180px;
+    width: 200px;
   }
 }
 
@@ -153,7 +144,7 @@ body {
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 530px) {
   .cards .card:nth-child(odd) {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -169,7 +160,7 @@ body {
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 530px) {
   .cards .card:nth-child(even) {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -195,9 +186,9 @@ body {
 
 @media screen and (max-width: 400px) {
   .cards .card__label {
-    font-size: .7rem;
+    font-size: .8rem;
     top: 33px;
-    right: -50px;
+    right: -55px;
   }
 }
 
@@ -252,7 +243,15 @@ body {
 .footer {
   text-align: center;
   font-family: poppins;
-  font-size: .8rem;
+  font-size: .9rem;
+  font-weight: 600;
   padding: 2rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    padding-top: 0rem;
+    font-size: .7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
